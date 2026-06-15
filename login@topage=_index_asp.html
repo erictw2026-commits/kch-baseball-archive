@@ -9,7 +9,17 @@
 }
 -->
 </style>
-<!-- Ruffle: 現代瀏覽器播放舊版 Flash -->
+<!-- Ruffle: 現代瀏覽器播放舊版 Flash（autoplay 開啟） -->
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "autoplay": "on",
+  "unmuteOverlay": "hidden",
+  "splashScreen": false,
+  "warnOnUnsupportedContent": false,
+  "logLevel": "error"
+};
+</script>
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
 
