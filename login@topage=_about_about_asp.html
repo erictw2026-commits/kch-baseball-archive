@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>管理者登入畫面</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+.bluebox {
+	border: 1px solid #0066CC;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+	
+<form ACTION="checkpwd.asp" name="form1" method="POST">
+        <table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="5"><img src="images/winxp_r1_c1.jpg" width="5" height="30"></td>
+            <td background="images/winxp_r1_c3.jpg"><font color="#FFFFFF" size="2"><img src="images/winxp_r1_c9.jpg" width="18" height="30" align="absmiddle">管理者登入畫面</font></td>
+            <td width="28"><a href="indexc.html"><img src="images/winxp_r1_c5.jpg" alt="離開登入畫面" width="28" height="30" border="0"></a></td>
+          </tr>
+        </table>
+        <table width="300" border="0" align="center" cellpadding="4" cellspacing="2" class="bluebox">
+          <tr> 
+            <td width="60"> <div align="right"><font size="2">帳號</font></div></td>
+            <td><font size="2"> 
+              <input name="user_id" type="text" id="user_id">
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="60"> <div align="right"><font size="2">密碼</font></div></td>
+            <td><font size="2"> 
+              <input name="user_pwd" type="password" id="user_pwd">
+              </font></td>
+          </tr>
+          <tr> 
+            <td colspan="2"> <div align="center"><font size="2"></font> <font size="2"> 
+             <input type=hidden name="topage" value=/about/about.asp>
+                <input type="submit" name="Submit" value="登入管理界面">
+                <input type="button" name="Submit2" value="離開登入畫面" onClick="window.location.href='/about/about.html';">
+                </font></div></td>
+          </tr>
+        </table>
+      </form></td>
+  </tr>
+</table>
+</body>
+</html>
