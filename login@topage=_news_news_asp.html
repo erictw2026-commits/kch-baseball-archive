@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta name="viewport" content="width=900, initial-scale=0.4, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=3, user-scalable=yes">
 <title>管理者登入畫面</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
@@ -22,6 +22,46 @@ window.RufflePlayer.config = {
 };
 </script>
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<style>
+/* RWD 強化：archive 站手機可點 */
+@media (max-width: 800px) {
+  body {
+    overflow-x: auto !important;
+    -webkit-text-size-adjust: 100%;
+  }
+  /* 主 table 強制可橫向卷 */
+  body > table {
+    margin: 0 auto;
+  }
+  /* 所有連結放大觸控目標 */
+  a {
+    display: inline-block;
+    min-height: 28px;
+    line-height: 1.6;
+    padding: 4px 6px;
+    font-size: 13px !important;
+  }
+  /* nav 區（top menu）連結放更大 */
+  td a[href*="/about/"], td a[href*="/news/"], td a[href*="/baseball/"],
+  td a[href*="/father/"], td a[href*="/story/"], td a[href*="/teach/"],
+  td a[href="/index.html"] {
+    min-height: 36px;
+    font-size: 14px !important;
+    font-weight: bold;
+  }
+  /* 圖片不要超出螢幕 */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* 桌機保留原樣，但所有連結加 hover/focus 視覺 */
+a:hover, a:focus {
+  background: rgba(255, 215, 0, 0.15);
+  outline: 2px solid rgba(255, 215, 0, 0.6);
+  outline-offset: 1px;
+}
+</style>
 </head>
 
 <body>

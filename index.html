@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
 	<HEAD>
-<meta name="viewport" content="width=900, initial-scale=0.4, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=3, user-scalable=yes">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<META HTTP-EQUIV="keyword" CONTENT="謝國城,棒球文教基金會,台灣棒球之父,影像故事,棒球教學,棒球活動,謝國城棒球文教基金會">
 		<META NAME="description" CONTENT="致力於推展台灣棒球運動、重振少棒王國聲威，再度躋身世界棒球強國之林之文教基金會。">
@@ -21,7 +21,47 @@ window.RufflePlayer.config = {
 };
 </script>
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-</HEAD>
+<style>
+/* RWD 強化：archive 站手機可點 */
+@media (max-width: 800px) {
+  body {
+    overflow-x: auto !important;
+    -webkit-text-size-adjust: 100%;
+  }
+  /* 主 table 強制可橫向卷 */
+  body > table {
+    margin: 0 auto;
+  }
+  /* 所有連結放大觸控目標 */
+  a {
+    display: inline-block;
+    min-height: 28px;
+    line-height: 1.6;
+    padding: 4px 6px;
+    font-size: 13px !important;
+  }
+  /* nav 區（top menu）連結放更大 */
+  td a[href*="/about/"], td a[href*="/news/"], td a[href*="/baseball/"],
+  td a[href*="/father/"], td a[href*="/story/"], td a[href*="/teach/"],
+  td a[href="/index.html"] {
+    min-height: 36px;
+    font-size: 14px !important;
+    font-weight: bold;
+  }
+  /* 圖片不要超出螢幕 */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* 桌機保留原樣，但所有連結加 hover/focus 視覺 */
+a:hover, a:focus {
+  background: rgba(255, 215, 0, 0.15);
+  outline: 2px solid rgba(255, 215, 0, 0.6);
+  outline-offset: 1px;
+}
+</style>
+</head>
 	<BODY TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
 <div style="position:fixed;top:0;left:0;right:0;background:#1a3a52;color:#fff;padding:10px 16px;font-family:'Microsoft JhengHei','PingFang TC',sans-serif;font-size:13px;z-index:99999;border-bottom:3px solid #d4a017;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.3);">
 <strong style="color:#ffd700;">📦 典藏版</strong>
